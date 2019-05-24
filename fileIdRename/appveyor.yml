@@ -1,0 +1,11 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+platform: x64
+build:
+  project: fileIdRename\fileIdRename.sln
+  parallel: true
+  verbosity: normal
+artifacts:
+- path: fileIdRename\bin\x64\Release\
+  name: win_x64_fileIdRename
